@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Food Delivery Delay Analysis | Yashika Puri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-nav scrolled">
+  <div class="nav-inner">
+    <a href="../index.html#top" class="logo">Yashika Puri<span>.</span></a>
+    <nav class="nav-links" style="display:flex;"><a href="../index.html#projects">All projects</a></nav>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="wrap">
+    <a href="../index.html#projects" class="back-link">← Back to all projects</a>
+    <div class="detail-hero-grid">
+      <div>
+        <span class="eyebrow">02 · OPERATIONS ANALYTICS</span>
+        <h1>Food Delivery Delay Analysis</h1>
+        <span class="detail-tools">SQL · RELATIONAL DATABASE DESIGN · HTML DASHBOARD</span>
+        <p class="detail-sub">Everyone blames traffic for a late order. I wanted to know if that was actually true, or just the easiest excuse — so I built a database to find out.</p>
+        <a href="https://github.com/Yashika051/Food-Delivery-Delay-Analysis" target="_blank" rel="noopener" class="btn btn-primary">View repository ↗</a>
+      </div>
+      <div class="detail-visual" style="background:linear-gradient(135deg, var(--coral) 0%, var(--ink) 130%);">
+        <svg viewBox="0 0 100 60"><circle cx="24" cy="42" r="8" fill="none" stroke="#fff" stroke-width="3"/><circle cx="68" cy="42" r="8" fill="none" stroke="#fff" stroke-width="3"/><path d="M24 42 L38 42 L46 22 L58 22 L64 34 L68 42" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="14" r="5" fill="#B6FF3E"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-body">
+  <div class="wrap detail-body-grid">
+    <div>
+      <p class="lede">Delivery delays are usually blamed on one thing (traffic, obviously) without anyone actually checking. So instead of accepting the folklore, I modeled the problem properly: orders, restaurants, time slots, and delay reasons, all connected in a relational schema, then queried it until the real pattern showed up.</p>
+      <h2>What I built</h2>
+      <ul>
+        <li>Designed a custom relational database schema — structured tables for orders, restaurants, delivery time slots, and delay reasons — instead of dumping everything into one flat sheet.</li>
+        <li>Wrote SQL queries to analyze delay patterns by restaurant, time slot, and stated reason.</li>
+        <li>Built an interactive HTML dashboard to make the delay breakdown visual instead of a wall of query output.</li>
+        <li>Found that traffic really is the biggest culprit — accounting for 50% of delays — but it's not the only story worth telling.</li>
+      </ul>
+      <h2>Why it matters</h2>
+      <p class="lede">Once delay reasons are structured data instead of a vague complaint field, a delivery operation can actually act on them — reroute during known traffic windows, staff up at the restaurants that consistently run slow, or renegotiate time slot promises with customers.</p>
+    </div>
+    <div class="detail-side">
+      <div class="side-card"><span class="mono">STACK</span><p>SQL · Relational DB Design</p></div>
+      <div class="side-card"><span class="mono">TYPE</span><p>Database Design + Analysis</p></div>
+      <div class="side-card">
+        <span class="mono">LINKS</span>
+        <a href="https://github.com/Yashika051/Food-Delivery-Delay-Analysis" target="_blank" rel="noopener" class="btn btn-primary">Repository ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Yashika Puri. All rights reserved.</footer>
+</body>
+</html>
