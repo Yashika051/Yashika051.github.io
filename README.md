@@ -1,4 +1,4 @@
-<!-- # Yashika Puri — Portfolio Website
+# Yashika Puri — Portfolio Website
 
 🔗 **Live site:** [yashika051.github.io](https://yashika051.github.io)
 
@@ -48,4 +48,4 @@ Each project has its own detail page on the live site with the full writeup and 
     ├── hotel-booking.html
     └── green-healthcare.html
 ```
--->
+
