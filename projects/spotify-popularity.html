@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spotify Track Popularity Analysis | Yashika Puri</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-nav scrolled">
+  <div class="nav-inner">
+    <a href="../index.html#top" class="logo">Yashika Puri<span>.</span></a>
+    <nav class="nav-links" style="display:flex;"><a href="../index.html#projects">All projects</a></nav>
+  </div>
+</header>
+
+<section class="detail-hero">
+  <div class="wrap">
+    <a href="../index.html#projects" class="back-link">← Back to all projects</a>
+    <div class="detail-hero-grid">
+      <div>
+        <span class="eyebrow">06 · MUSIC & AUDIO ANALYTICS</span>
+        <h1>Spotify Track Popularity Analysis</h1>
+        <span class="detail-tools">PYTHON · POLARS · DUCKDB · QUARTO</span>
+        <p class="detail-sub">Everyone has a theory about what makes a song popular. This project actually checks — across 114,000 tracks and 114 genres.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://yashika051.github.io/spotify-popularity-analysis/" target="_blank" rel="noopener" class="btn btn-primary">View live analysis ↗</a>
+          <a href="https://github.com/Yashika051/spotify-popularity-analysis" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub ↗</a>
+        </div>
+      </div>
+      <div class="detail-visual" style="background:linear-gradient(135deg, var(--amber) 0%, var(--ink) 130%);">
+        <svg viewBox="0 0 100 60"><rect x="20" y="30" width="7" height="22" rx="3" fill="rgba(255,255,255,.85)"/><rect x="33" y="18" width="7" height="34" rx="3" fill="rgba(255,255,255,.6)"/><rect x="46" y="8" width="7" height="44" rx="3" fill="#B6FF3E"/><rect x="59" y="22" width="7" height="30" rx="3" fill="rgba(255,255,255,.6)"/><rect x="72" y="14" width="7" height="38" rx="3" fill="rgba(255,255,255,.85)"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-body">
+  <div class="wrap detail-body-grid">
+    <div>
+      <p class="lede">"Popular" music gets talked about a lot, but rarely measured properly. This project treats it as an actual analytical question — pulling apart Spotify's catalog to see how popularity actually distributes, and what it correlates with, instead of relying on gut feeling about what a "hit" sounds like.</p>
+      <h2>What I built</h2>
+      <ul>
+        <li>Processed and analyzed 114K tracks across 114 genres using Polars and DuckDB for fast, SQL-driven exploration at scale.</li>
+        <li>Examined how popularity is distributed across the catalog — it's not evenly spread, and that shape matters for how you interpret any "average."</li>
+        <li>Broke down genre and artist-level trends to see which categories skew toward higher or lower popularity.</li>
+        <li>Explored relationships between popularity and audio features (like energy, danceability, and tempo) to see which characteristics actually correlate with a track doing well.</li>
+        <li>Published the full analysis as an interactive Quarto report instead of a static notebook, so the findings are actually explorable.</li>
+      </ul>
+      <h2>Why it matters</h2>
+      <p class="lede">This is as much a data engineering exercise as an analysis one — Polars and DuckDB let the whole pipeline stay fast and SQL-friendly at 114K-row scale, and publishing through Quarto turns a one-off notebook into something a non-technical reader can actually explore and trust.</p>
+    </div>
+    <div class="detail-side">
+      <div class="side-card"><span class="mono">STACK</span><p>Python · Polars · DuckDB · Quarto</p></div>
+      <div class="side-card"><span class="mono">TYPE</span><p>EDA + Published Interactive Report</p></div>
+      <div class="side-card">
+        <span class="mono">LINKS</span>
+        <a href="https://yashika051.github.io/spotify-popularity-analysis/" target="_blank" rel="noopener" class="btn btn-primary">Live Analysis ↗</a>
+        <a href="https://github.com/Yashika051/spotify-popularity-analysis" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:10px;">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Yashika Puri. All rights reserved.</footer>
+</body>
+</html>
